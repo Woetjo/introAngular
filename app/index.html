@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IntroAngular</title>
+
+    <!--bootstrap stylesheet laden-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+
+<!--we initialiseren onze app op de body tag-->
+<body ng-app="introApp">
+<div class="container">
+    <!--onze views worden in deze div getoond-->
+    <div ng-view></div>
+</div>
+
+
+<!--Angular, bootstrap en jQuery laden-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--Hieronder laden we alle javascript voor onze module-->
+<script src="scripts/intro.module.js"></script>
+<script src="scripts/intro.routes.js"></script>
+<script src="scripts/welkom/welkomController.js"></script>
+<script src="scripts/invoervelden/invoerController.js"></script>
+<script src="scripts/servicesEnzo/servicesEnzoController.js"></script>
+<script src="scripts/services/gebruikersService.js"></script>
+
+</body>
+</html>

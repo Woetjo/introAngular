@@ -1,0 +1,19 @@
+<h1>Welkom bij de introductie Angular</h1>
+<p>
+    Deze view is gekoppeld aan de welkomController. Zowel deze view als de welkomController hebben toegang tot de vm (=view model).
+</p>
+<p>
+    Zo kunnen we de inhoud van vm.message laten zien:
+</p>
+<p>
+    vm.message = {{vm.message}}
+</p>
+<h2>Functies en expressies</h2>
+<p>
+    Maar we kunnen ook een functie uitvoeren en de return value daarvan tonen. Of zelfs een expressie evalueren:
+</p>
+<p>
+    vm.berekenSom(4,9) = {{ vm.berekenSom(4,9) }} <br>
+    10 + 8 = {{ 10 + 8 }} <br>
+    4 + 7 + vm.berekenSom(2,6) = {{ 4 + 7 + vm.berekenSom(2,6) }}
+</p>

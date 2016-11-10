@@ -1,0 +1,19 @@
+<h1>Services en dependency injection</h1>
+
+<h2>Gebruikers</h2>
+<ul ng-show="vm.gebruikers.length">
+    <li ng-repeat="gebruiker in vm.gebruikers">{{gebruiker.naam}} woont in {{gebruiker.woonplaats}}</li>
+</ul>
+<p ng-hide="vm.gebruikers.length">Loading data...</p>
+
+
+<h2>Voeg een gebruiker toe</h2>
+<div class="form-group">
+    <label for="naam">Naam: </label>
+    <input type="text" class="form-control" id="naam" ng-model="vm.naam">
+</div>
+<div class="form-group">
+    <label for="woonplaats">woonplaats: </label>
+    <input type="text" class="form-control" id="woonplaats" ng-model="vm.woonplaats">
+</div>
+<button type="button" class="btn btn-primary" ng-click="vm.toevoegen()">Toevoegen</button>
