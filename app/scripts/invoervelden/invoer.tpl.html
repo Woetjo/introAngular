@@ -7,16 +7,16 @@
 <p>Dankzij double binding met behulp van ng-model wordt de inhoud van vm.invoerveld, zodra hij wijzigt, overal bijgewerkt:</p>
 <p>vm.invoerveld = {{vm.invoerveld}}</p>
 
-<p>Hierboven werd de wijziging van het veld vanuit de view geinitieerd. Door op onderstaande knop te klikken voeren we een functie uit die de waarde van vm.invoerveld wijzigt. Zo wordt de wijziging door de controller uitgevoerd en niet door de view. Hey presto double binding</p>
+<p>Hierboven werd de wijziging van het veld vanuit de view geinitieerd. Door op onderstaande knop te klikken voeren we een functie van de invoerController uit die de waarde van vm.invoerveld wijzigt. Zo wordt de wijziging door de controller uitgevoerd en niet door de view. Hey presto double binding</p>
 
 <button type="button" class="btn btn-primary" ng-click="vm.heyPresto()">Vul vm.invoerveld met de waarde 'Hey Presto'</button>
 
 <h2>Single binding</h2>
 <div class="form-group">
-    <label for="exampleInput2">Onderstaand input veld is met ng-model gekoppeld aan vm.nogEenInvoerveld: </label>
+    <label for="exampleInput2">Onderstaand inputveld is met ng-model gekoppeld aan vm.nogEenInvoerveld: </label>
     <input type="text" class="form-control" id="exampleInput2" ng-model="vm.nogEenInvoerveld">
 </div>
-<p>Door single binding wordt onderstaande waarde alleen initieel gevuld en daarna nooit meer:</p>
+<p>Door single binding wordt de waarde alleen initieel gevuld en daarna nooit meer bijgewerkt:</p>
 <p>vm.nogEenInvoerveld = {{ ::vm.nogEenInvoerveld}} - single binding</p>
 <p>vm.nogEenInvoerveld = {{ vm.nogEenInvoerveld}} - double binding</p>
 
