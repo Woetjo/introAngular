@@ -19,6 +19,11 @@
 				controller: 'servicesEnzoController',
 				controllerAs: 'vm'
 			})
+			.when('/groet', {
+				templateUrl: 'scripts/groet/groet.tpl.html',
+				controller: 'groetController',
+				controllerAs: 'vm'
+			})
 			.otherwise({
 				redirectTo: '/'
 			})

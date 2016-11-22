@@ -3,6 +3,8 @@
 
 	function gebruikersService($q, $timeout) {
 
+
+		// vars
 		var alleGebruikers = [
 			{
 				naam: 'Roel Noorman',
@@ -19,6 +21,7 @@
 		];
 
 
+		// functions
 		function getAlleGebruikers() {
 			var deferred = $q.defer();
 
@@ -38,7 +41,6 @@
 				})
 			}
 		}
-
 
 		return {
 			getAlleGebruikers: getAlleGebruikers,
